@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5ebc64-c4e6-4c25-bba3-5332fd493ea5" name="Changes" comment="init project">
+    <list default="true" id="9d5ebc64-c4e6-4c25-bba3-5332fd493ea5" name="Changes" comment="move code from main.py to rect.py">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,11 +64,29 @@
       <option name="project" value="LOCAL" />
       <updated>1709226338630</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implement moving rect on the screen">
+      <option name="closed" value="true" />
+      <created>1709454554111</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1709454554111</updated>
+    </task>
+    <task id="LOCAL-00003" summary="move code from main.py to rect.py">
+      <option name="closed" value="true" />
+      <created>1709454604735</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1709454604735</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init project" />
-    <option name="LAST_COMMIT_MESSAGE" value="init project" />
+    <MESSAGE value="implement moving rect on the screen" />
+    <MESSAGE value="move code from main.py to rect.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="move code from main.py to rect.py" />
   </component>
 </project>
