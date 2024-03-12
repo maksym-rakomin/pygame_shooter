@@ -1,9 +1,10 @@
 import sys
 import pygame
+from random import randint
 
 SCREEN_WIDTH, SCREEN_HEIGHT = 800, 600
 SCREEN_COLOR = (32, 52, 71)
-STEP = 1
+STEP = 2
 
 pygame.init()
 
@@ -15,7 +16,7 @@ FIGHTER_WIDTH, FIGHTER_HEIGHT = FIGHTER_IMAGE.get_size()
 fighter_x, fighter_y = SCREEN_WIDTH / 2 - FIGHTER_WIDTH / 2, SCREEN_HEIGHT - FIGHTER_HEIGHT
 fighter_is_moving_left, fighter_is_moving_right = False, False
 
-BALL_STEP = 1.5
+BALL_STEP = 3
 BALL_IMAGE = pygame.image.load('images/ball.png')
 BALL_WIDTH, BALL_HEIGHT = BALL_IMAGE.get_size()
 ball_x, ball_y = 0, 0
@@ -24,7 +25,7 @@ is_ball_was_fired = False
 ALIEN_STEP = 1
 ALIEN_IMAGE = pygame.image.load('images/alien.png')
 ALIEN_WIDTH, ALIEN_HEIGHT = ALIEN_IMAGE.get_size()
-alien_x, alien_y = 0, 0
+alien_x, alien_y = randint(0, SCREEN_WIDTH - ALIEN_WIDTH), 0
 is_alien_was_fired = False
 
 while True:
@@ -56,6 +57,8 @@ while True:
     if fighter_is_moving_right and fighter_x < SCREEN_WIDTH - FIGHTER_WIDTH:
         fighter_x += STEP
 
+    alien_y += ALIEN_STEP
+
     if is_ball_was_fired and ball_y + BALL_HEIGHT < 0:
         is_ball_was_fired = False
 
@@ -64,6 +67,7 @@ while True:
 
     screen.fill(SCREEN_COLOR)
     screen.blit(FIGHTER_IMAGE, (fighter_x, fighter_y))
+    screen.blit(ALIEN_IMAGE, (alien_x, alien_y))
 
     if is_ball_was_fired:
         screen.blit(BALL_IMAGE, (ball_x, ball_y))
