@@ -80,6 +80,12 @@ while is_running_game:
     if alien_y + ALIEN_HEIGHT > fighter_y:
         is_running_game = False
 
+    if (is_ball_was_fired and
+            alien_x < ball_x < alien_x + ALIEN_WIDTH - BALL_WIDTH and
+            alien_y < ball_y < alien_y + ALIEN_HEIGHT - BALL_HEIGHT):
+        is_ball_was_fired = False
+        alien_x, alien_y = randint(0, SCREEN_WIDTH - ALIEN_WIDTH), 0
+
 game_over_text = GAME_FONT.render('Game over', True, 'white')
 game_over_rectangle = game_over_text.get_rect()
 game_over_rectangle.center = (SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
