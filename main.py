@@ -4,7 +4,6 @@ from random import randint
 
 SCREEN_WIDTH, SCREEN_HEIGHT = 800, 600
 SCREEN_COLOR = (32, 52, 71)
-STEP = 2
 
 pygame.init()
 GAME_FONT = pygame.font.Font(None, 30)
@@ -12,6 +11,7 @@ GAME_FONT = pygame.font.Font(None, 30)
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Awesom shooter game')
 
+FIGHTER_STEP = 5
 FIGHTER_IMAGE = pygame.image.load('images/fighter.png')
 FIGHTER_WIDTH, FIGHTER_HEIGHT = FIGHTER_IMAGE.get_size()
 fighter_x, fighter_y = SCREEN_WIDTH / 2 - FIGHTER_WIDTH / 2, SCREEN_HEIGHT - FIGHTER_HEIGHT
@@ -24,6 +24,7 @@ ball_x, ball_y = 0, 0
 is_ball_was_fired = False
 
 ALIEN_STEP = 1
+alien_speed = ALIEN_STEP
 ALIEN_IMAGE = pygame.image.load('images/alien.png')
 ALIEN_WIDTH, ALIEN_HEIGHT = ALIEN_IMAGE.get_size()
 alien_x, alien_y = randint(0, SCREEN_WIDTH - ALIEN_WIDTH), 0
@@ -55,12 +56,12 @@ while is_running_game:
             if event.key == pygame.K_RIGHT:
                 fighter_is_moving_right = False
 
-    if fighter_is_moving_left and fighter_x >= STEP:
-        fighter_x -= STEP
+    if fighter_is_moving_left and fighter_x >= FIGHTER_STEP:
+        fighter_x -= FIGHTER_STEP
     if fighter_is_moving_right and fighter_x < SCREEN_WIDTH - FIGHTER_WIDTH:
-        fighter_x += STEP
+        fighter_x += FIGHTER_STEP
 
-    alien_y += ALIEN_STEP
+    alien_y += alien_speed
 
     if is_ball_was_fired and ball_y + BALL_HEIGHT < 0:
         is_ball_was_fired = False
@@ -85,6 +86,7 @@ while is_running_game:
             alien_y < ball_y < alien_y + ALIEN_HEIGHT - BALL_HEIGHT):
         is_ball_was_fired = False
         alien_x, alien_y = randint(0, SCREEN_WIDTH - ALIEN_WIDTH), 0
+        alien_speed += ALIEN_STEP / 2
 
 game_over_text = GAME_FONT.render('Game over', True, 'white')
 game_over_rectangle = game_over_text.get_rect()
