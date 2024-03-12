@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5ebc64-c4e6-4c25-bba3-5332fd493ea5" name="Changes" comment="add images folder">
+    <list default="true" id="9d5ebc64-c4e6-4c25-bba3-5332fd493ea5" name="Changes" comment="remove excel file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -23,24 +23,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="2d37UZiKhxEnbdOZFufILWLGAHz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.new.ui"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -89,7 +89,39 @@
       <option name="project" value="LOCAL" />
       <updated>1709459624848</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="init project shooter">
+      <option name="closed" value="true" />
+      <created>1709728261594</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1709728261594</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add excel file">
+      <option name="closed" value="true" />
+      <created>1709728387099</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1709728387099</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add excel file">
+      <option name="closed" value="true" />
+      <created>1709728437228</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1709728437228</updated>
+    </task>
+    <task id="LOCAL-00008" summary="remove excel file">
+      <option name="closed" value="true" />
+      <created>1709728478244</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1709728478244</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -97,6 +129,9 @@
     <MESSAGE value="implement moving rect on the screen" />
     <MESSAGE value="move code from main.py to rect.py" />
     <MESSAGE value="add images folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="add images folder" />
+    <MESSAGE value="init project shooter" />
+    <MESSAGE value="add excel file" />
+    <MESSAGE value="remove excel file" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove excel file" />
   </component>
 </project>
