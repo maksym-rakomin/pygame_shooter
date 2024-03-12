@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9d5ebc64-c4e6-4c25-bba3-5332fd493ea5" name="Changes" comment="add rocket to screen" />
+    <list default="true" id="9d5ebc64-c4e6-4c25-bba3-5332fd493ea5" name="Changes" comment="replace rocket to ball">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710233078777</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="replace rocket to ball">
+      <option name="closed" value="true" />
+      <created>1710233647586</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1710233647586</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -138,6 +149,7 @@
     <MESSAGE value="add excel file" />
     <MESSAGE value="remove excel file" />
     <MESSAGE value="add rocket to screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="add rocket to screen" />
+    <MESSAGE value="replace rocket to ball" />
+    <option name="LAST_COMMIT_MESSAGE" value="replace rocket to ball" />
   </component>
 </project>
