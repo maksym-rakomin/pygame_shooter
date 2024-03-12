@@ -7,6 +7,7 @@ SCREEN_COLOR = (32, 52, 71)
 STEP = 2
 
 pygame.init()
+GAME_FONT = pygame.font.Font(None, 30)
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption('Awesom shooter game')
@@ -28,7 +29,9 @@ ALIEN_WIDTH, ALIEN_HEIGHT = ALIEN_IMAGE.get_size()
 alien_x, alien_y = randint(0, SCREEN_WIDTH - ALIEN_WIDTH), 0
 is_alien_was_fired = False
 
-while True:
+is_running_game = True
+
+while is_running_game:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             sys.exit()
@@ -73,3 +76,14 @@ while True:
         screen.blit(BALL_IMAGE, (ball_x, ball_y))
 
     pygame.display.update()
+
+    if alien_y + ALIEN_HEIGHT > fighter_y:
+        is_running_game = False
+
+game_over_text = GAME_FONT.render('Game over', True, 'white')
+game_over_rectangle = game_over_text.get_rect()
+game_over_rectangle.center = (SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
+screen.blit(game_over_text, game_over_rectangle)
+pygame.display.update()
+pygame.time.wait(5000)
+pygame.quit()
